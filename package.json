@@ -1,9 +1,12 @@
 {
   "name": "whatsapp-bot",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
   "scripts": { "start": "node index.js" },
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.0",
-    "@hapi/boom": "^3.1.0"
+    "@whiskeysockets/baileys": "latest",
+    "@hapi/boom": "latest",
+    "yt-dlp-exec": "latest"
   }
 }
