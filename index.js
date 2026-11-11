@@ -8,8 +8,6 @@ async function startBot() {
   const { version } = await fetchLatestBaileysVersion();
   const sock = makeWASocket({ auth: state, version, printQRInTerminal: false, browser: ['Chrome', 'Chrome', '120.0.0.0'] });
   sock.ev.on('creds.update', saveCreds);
-
-  // اذا ما فيه جلسة، اطلب كود ربط
   if (!state.creds.registered) {
     const phone = process.env.PHONE_NUMBER;
     if (phone) {
@@ -17,12 +15,10 @@ async function startBot() {
         try {
           const code = await sock.requestPairingCode(phone);
           console.log('🔑 كود الربط حقك:', code);
-          console.log('روح واتساب > الأجهزة المرتبطة > ربط جهاز > ربط برقم الهاتف واكتب الكود');
         } catch(e) { console.log('خطأ كود الربط:', e.message); }
       }, 3000);
     }
   }
-
   sock.ev.on('connection.update', (u) => {
     if (u.connection === 'open') console.log('✅ البوت متصل!');
     if (u.connection === 'close') {
@@ -40,7 +36,6 @@ async function startBot() {
       if (m.viewOnceMessageV2) m = m.viewOnceMessageV2.message;
       const text = m.conversation || m.extendedTextMessage?.text || '';
       if (!text) return;
-      console.log('وصلتني:', text);
       const from = msg.key.remoteJid;
       const fileName = `song_${Date.now()}`;
       if (text.startsWith('!بحث ')) {
@@ -68,7 +63,9 @@ async function startBot() {
           await sock.sendMessage(from, { audio: fs.readFileSync(`${fileName}.mp3`), mimetype: 'audio/mpeg' });
           try { fs.unlinkSync(`${fileName}.mp3`); } catch {}
         });
+        return;
       }
+      await sock.sendMessage(from, { text: `🤖 أنا بوت تمت برمجتي بواسطة المطور عبدالله الازهوري\n\nيمكنك عبر البوت تحميل أو البحث عن أي شي عبر اليوتيوب\n\n📱 رقم المطور للتواصل: 777442187\n\nاكتب:\n!بحث اسم الأغنية\nأو ارسل رابط يوتيوب` });
     } catch(e) { console.log(e.message); }
   });
 }
