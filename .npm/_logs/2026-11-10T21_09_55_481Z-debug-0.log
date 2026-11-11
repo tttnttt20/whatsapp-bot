@@ -1,0 +1,18 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@12.2.2
+2 info using node@v24.22.2
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm config set registry https://registry.npmmirror.com
+7 verbose argv "config" "set" "registry" "https://registry.npmmirror.com"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_09_55_481Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_09_55_481Z-debug-0.log
+10 silly logfile done cleaning log files
+11 info config set "registry" "https://registry.npmmirror.com"
+12 verbose cwd /data/data/com.termux/files/home
+13 verbose os Linux 4.19.157-perf
+14 verbose node v24.22.2
+15 verbose npm  v12.2.2
+16 verbose exit 0
+17 info ok

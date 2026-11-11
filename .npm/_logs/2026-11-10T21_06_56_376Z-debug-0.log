@@ -1,0 +1,42 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@12.2.2
+2 info using node@v24.22.2
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install @whiskeysockets/baileys@latest
+7 verbose argv "install" "@whiskeysockets/baileys@latest"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_06_56_376Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_06_56_376Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly install-scripts no package.json at prefix Could not read package.json: Error: ENOENT: no such file or directory, open '/data/data/com.termux/files/home/package.json'
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly packumentCache corgi:https://registry.npmjs.org/@whiskeysockets%2fbaileys cache-miss
+14 http fetch GET https://registry.npmjs.org/@whiskeysockets%2fbaileys attempt 1 failed with ETIMEDOUT
+15 http fetch GET https://registry.npmjs.org/@whiskeysockets%2fbaileys attempt 2 failed with ETIMEDOUT
+16 http fetch GET https://registry.npmjs.org/@whiskeysockets%2fbaileys attempt 3 failed with ETIMEDOUT
+17 verbose type system
+18 verbose stack FetchError: request to https://registry.npmjs.org/@whiskeysockets%2fbaileys failed, reason: 
+18 verbose stack     at ClientRequest.<anonymous> (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/minipass-fetch/lib/index.js:130:14)
+18 verbose stack     at ClientRequest.emit (node:events:514:28)
+18 verbose stack     at emitErrorEvent (node:_http_client:114:11)
+18 verbose stack     at _destroy (node:_http_client:1175:9)
+18 verbose stack     at onSocketNT (node:_http_client:1196:5)
+18 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+19 error code ETIMEDOUT
+20 error errno ETIMEDOUT
+21 error network request to https://registry.npmjs.org/@whiskeysockets%2fbaileys failed, reason: 
+22 error network This is a problem related to network connectivity.
+22 error network In most cases you are behind a proxy or have bad network settings.
+22 error network
+22 error network If you are behind a proxy, please make sure that the 'proxy' config is set properly.  See: 'npm help config'
+23 silly unfinished npm timer reify 1794344817532
+24 silly unfinished npm timer reify:loadTrees 1794344817534
+25 silly unfinished npm timer idealTree:userRequests 1794344817583
+26 verbose cwd /data/data/com.termux/files/home
+27 verbose os Linux 4.19.157-perf
+28 verbose node v24.22.2
+29 verbose npm  v12.2.2
+30 verbose exit 1
+31 verbose code 1
+32 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_06_56_376Z-debug-0.log

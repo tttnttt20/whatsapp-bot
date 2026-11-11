@@ -1,0 +1,168 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@12.2.2
+2 info using node@v24.22.2
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install @whiskeysockets/baileys@latest
+7 verbose argv "install" "@whiskeysockets/baileys@latest"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_54_26_604Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-11-10T21_54_26_604Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly packumentCache corgi:https://registry.npmmirror.com/@whiskeysockets%2fbaileys cache-miss
+14 http fetch GET 200 https://registry.npmmirror.com/@whiskeysockets%2fbaileys 1926ms (cache revalidated)
+15 silly packumentCache corgi:https://registry.npmmirror.com/@whiskeysockets%2fbaileys set size:106347 disposed:false
+16 silly idealTree buildDeps
+17 silly fetch manifest @whiskeysockets/baileys@7.0.0-rc14
+18 silly packumentCache full:https://registry.npmmirror.com/@whiskeysockets%2fbaileys cache-miss
+19 http fetch GET 200 https://registry.npmmirror.com/@whiskeysockets%2fbaileys 659ms (cache revalidated)
+20 silly packumentCache full:https://registry.npmmirror.com/@whiskeysockets%2fbaileys set size:247719 disposed:false
+21 silly fetch manifest sharp@*
+22 silly packumentCache full:https://registry.npmmirror.com/sharp cache-miss
+23 http fetch GET 200 https://registry.npmmirror.com/sharp 405ms (cache revalidated)
+24 silly packumentCache full:https://registry.npmmirror.com/sharp set size:1224555 disposed:false
+25 silly placeDep ROOT @whiskeysockets/baileys@7.0.0-rc14 REPLACE for:  want: 7.0.0-rc14
+26 silly reify moves {}
+27 silly audit bulk request {
+27 silly audit   '@borewit/text-codec': [ '0.2.3' ],
+27 silly audit   '@cacheable/memory': [ '2.2.0' ],
+27 silly audit   '@cacheable/node-cache': [ '1.7.6' ],
+27 silly audit   '@cacheable/utils': [ '2.5.0' ],
+27 silly audit   '@emnapi/runtime': [ '1.11.3' ],
+27 silly audit   '@hapi/boom': [ '9.1.4' ],
+27 silly audit   '@hapi/hoek': [ '9.3.0' ],
+27 silly audit   '@img/colour': [ '1.1.0' ],
+27 silly audit   '@img/sharp-darwin-arm64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-darwin-x64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-freebsd-wasm32': [ '0.35.5' ],
+27 silly audit   '@img/sharp-libvips-darwin-arm64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-darwin-x64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-arm': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-arm64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-ppc64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-riscv64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-s390x': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linux-x64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linuxmusl-arm64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-libvips-linuxmusl-x64': [ '1.3.4' ],
+27 silly audit   '@img/sharp-linux-arm': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linux-arm64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linux-ppc64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linux-riscv64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linux-s390x': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linux-x64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linuxmusl-arm64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-linuxmusl-x64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-wasm32': [ '0.35.5' ],
+27 silly audit   '@img/sharp-webcontainers-wasm32': [ '0.35.5' ],
+27 silly audit   '@img/sharp-win32-arm64': [ '0.35.5' ],
+27 silly audit   '@img/sharp-win32-ia32': [ '0.35.5' ],
+27 silly audit   '@img/sharp-win32-x64': [ '0.35.5' ],
+27 silly audit   '@keyv/bigmap': [ '1.3.1' ],
+27 silly audit   '@keyv/serialize': [ '1.1.1' ],
+27 silly audit   '@pinojs/redact': [ '0.4.0' ],
+27 silly audit   '@protobufjs/aspromise': [ '1.1.2' ],
+27 silly audit   '@protobufjs/base64': [ '1.1.2' ],
+27 silly audit   '@protobufjs/codegen': [ '2.0.5' ],
+27 silly audit   '@protobufjs/eventemitter': [ '1.1.1' ],
+27 silly audit   '@protobufjs/fetch': [ '1.1.1' ],
+27 silly audit   '@protobufjs/float': [ '1.0.2' ],
+27 silly audit   '@protobufjs/path': [ '1.1.2' ],
+27 silly audit   '@protobufjs/pool': [ '1.1.0' ],
+27 silly audit   '@protobufjs/utf8': [ '1.1.2' ],
+27 silly audit   '@tokenizer/inflate': [ '0.4.1' ],
+27 silly audit   '@tokenizer/token': [ '0.3.0' ],
+27 silly audit   '@types/node': [ '26.6.6' ],
+27 silly audit   'async-mutex': [ '0.5.0' ],
+27 silly audit   'atomic-sleep': [ '1.0.0' ],
+27 silly audit   cacheable: [ '2.5.0' ],
+27 silly audit   'content-type': [ '2.1.0' ],
+27 silly audit   'curve25519-js': [ '0.0.4' ],
+27 silly audit   debug: [ '4.4.3' ],
+27 silly audit   'detect-libc': [ '2.1.2' ],
+27 silly audit   eventemitter3: [ '5.0.4' ],
+27 silly audit   'file-type': [ '21.3.4' ],
+27 silly audit   hashery: [ '1.5.1' ],
+27 silly audit   hookified: [ '1.15.1', '2.2.0' ],
+27 silly audit   ieee754: [ '1.2.1' ],
+27 silly audit   keyv: [ '5.6.0' ],
+27 silly audit   libsignal: [ '6.0.0' ],
+27 silly audit   long: [ '5.3.2' ],
+27 silly audit   'lru-cache': [ '11.5.3' ],
+27 silly audit   'media-typer': [ '2.0.0' ],
+27 silly audit   ms: [ '2.1.3' ],
+27 silly audit   'music-metadata': [ '11.16.1' ],
+27 silly audit   'on-exit-leak-free': [ '2.1.2' ],
+27 silly audit   'p-queue': [ '9.3.5' ],
+27 silly audit   'p-timeout': [ '7.0.2' ],
+27 silly audit   pino: [ '9.14.0' ],
+27 silly audit   'pino-abstract-transport': [ '2.0.0' ],
+27 silly audit   'pino-std-serializers': [ '7.1.0' ],
+27 silly audit   'process-warning': [ '5.1.1' ],
+27 silly audit   protobufjs: [ '7.6.6' ],
+27 silly audit   qified: [ '0.10.1' ],
+27 silly audit   'qrcode-terminal': [ '0.12.0' ],
+27 silly audit   'quick-format-unescaped': [ '4.0.4' ],
+27 silly audit   'real-require': [ '0.2.0' ],
+27 silly audit   'safe-stable-stringify': [ '2.5.0' ],
+27 silly audit   semver: [ '7.8.6' ],
+27 silly audit   sharp: [ '0.35.5' ],
+27 silly audit   'sonic-boom': [ '4.2.1' ],
+27 silly audit   split2: [ '4.2.0' ],
+27 silly audit   strtok3: [ '10.7.0' ],
+27 silly audit   'thread-stream': [ '3.2.0' ],
+27 silly audit   'token-types': [ '6.2.0' ],
+27 silly audit   tslib: [ '2.9.1' ],
+27 silly audit   'uint8array-extras': [ '1.6.0' ],
+27 silly audit   'undici-types': [ '8.9.0' ],
+27 silly audit   'whatsapp-rust-bridge': [ '0.5.4' ],
+27 silly audit   'win-guid': [ '0.2.1' ],
+27 silly audit   ws: [ '8.22.2' ],
+27 silly audit   '@whiskeysockets/baileys': [ '7.0.0-rc14' ]
+27 silly audit }
+28 http fetch POST 404 https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk 279ms
+29 verbose audit error HttpErrorGeneral: 404 Not Found - POST https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk - [NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet
+29 verbose audit error     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:103:15
+29 verbose audit error     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+29 verbose audit error     at async #getReport (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/audit-report.js:334:19)
+29 verbose audit error     at async AuditReport.run (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/audit-report.js:101:19)
+29 verbose audit error     at async Arborist.reify (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:297:24)
+29 verbose audit error     at async Install.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/install.js:176:5)
+29 verbose audit error     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:194:9)
+29 verbose audit error     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:67:5) {
+29 verbose audit error   headers: [Object: null prototype] {
+29 verbose audit error     server: [ 'Tengine' ],
+29 verbose audit error     date: [ 'Tue, 10 Nov 2026 21:54:32 GMT' ],
+29 verbose audit error     'content-type': [ 'application/json' ],
+29 verbose audit error     'transfer-encoding': [ 'chunked' ],
+29 verbose audit error     connection: [ 'keep-alive' ],
+29 verbose audit error     'strict-transport-security': [ 'max-age=5184000' ],
+29 verbose audit error     via: [ 'ens-cache13.sg39[,404666]' ],
+29 verbose audit error     'timing-allow-origin': [ '*' ],
+29 verbose audit error     eagleid: [ '2b6d7da117943476728842863e' ],
+29 verbose audit error     'x-fetch-attempts': [ '1' ]
+29 verbose audit error   },
+29 verbose audit error   statusCode: 404,
+29 verbose audit error   code: 'E404',
+29 verbose audit error   method: 'POST',
+29 verbose audit error   uri: 'https://registry.npmmirror.com/-/npm/v1/security/advisories/bulk',
+29 verbose audit error   body: {
+29 verbose audit error     error: '[NOT_IMPLEMENTED] /-/npm/v1/security/* not implemented yet'
+29 verbose audit error   },
+29 verbose audit error   pkgid: undefined
+29 verbose audit error }
+30 silly audit error [object Object]
+31 silly audit report null
+32 warn install-scripts 2 packages had install scripts blocked because they are not covered by allowScripts:
+32 warn install-scripts   protobufjs@7.6.6 (postinstall: node scripts/postinstall)
+32 warn install-scripts   @whiskeysockets/baileys@7.0.0-rc14 (preinstall: node ./engine-requirements.js)
+32 warn install-scripts
+32 warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
+33 verbose cwd /data/data/com.termux/files/home
+34 verbose os Linux 4.19.157-perf
+35 verbose node v24.22.2
+36 verbose npm  v12.2.2
+37 verbose exit 0
+38 info ok
